@@ -14,13 +14,14 @@ background-color: azure;
 width:30vw;
 height:30vw;
 border: 5px solid black;
-border-radius: 25px;
+border-radius: 15px;
 }
 
 .title {
 grid-area: header;
 justify-self: center;
 font-size: 2vw;
+font-family: "Courier New", Courier, monospace;
 }
 
 .game-buttons{
@@ -30,9 +31,10 @@ justify-self: center;
 
 .game-buttons button {
 background: transparent;
-border: 2px solid black;
-border-radius: 25px;
+border: 3px solid rgba(20, 20, 20, 0.877);
+border-radius: 20px;
 font-size: 2vw;
+font-family: "Courier New", Courier, monospace;
 }
 
 button:hover {
