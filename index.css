@@ -1,25 +1,44 @@
-:root {
-    --grid-cols: 1;
-    --grid-rows: 1;
-  }
-  
-  #container {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-rows: repeat(var(--grid-rows), 1fr);
-    grid-template-columns: repeat(var(--grid-cols), 1fr);
-  }
-  
-  .grid-item {
-    padding: 1em;
-    border: 1px solid #ddd;
-    text-align: center;
-  }
+.container {
+display: grid;
+grid-gap: 0em;
+grid-template-rows: auto 1fr auto;
+place-content: center;
+grid-template-columns: 1fr;
+grid-template-areas: "header" "coloringBox" "buttons";
+}
 
-  .grid-item:hover {
-    background-color: yellow;
-  }
+.parent-block {
+grid-area: coloringBox;
+margin: 1em auto; 
+background-color: azure;
+width:30vw;
+height:30vw;
+border: 5px solid black;
+border-radius: 25px;
+}
 
-  .hovering{
-    background-color: yellow;
-  }
+.title {
+grid-area: header;
+justify-self: center;
+font-size: 2vw;
+}
+
+.game-buttons{
+grid-area: buttons;
+justify-self: center;
+}
+
+.game-buttons button {
+background: transparent;
+border: 2px solid black;
+border-radius: 25px;
+font-size: 2vw;
+}
+
+button:hover {
+    background: #66ccff;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
